@@ -6,7 +6,7 @@
 
 Un Proxy es un intermediario entre el cliente y el servidor. Cuando un usuario realiza una solicitud web, la petición primero pasa por el proxy, el cual puede observar, registrar, modificar o reenviar el tráfico antes de que llegue a su destino.
 
-#Diferencia entre Proxy y VPN
+# Diferencia entre Proxy y VPN
 
 Un proxy solo oculta la dirección IP para una aplicación o navegador específico sin cifrar los datos, mientras que una VPN (Red Privada Virtual) cifra todo el tráfico del dispositivo a nivel del sistema operativo.
 
