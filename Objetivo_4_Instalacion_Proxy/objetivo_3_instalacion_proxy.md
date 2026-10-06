@@ -1,8 +1,8 @@
-##Objetivo 4 - Instalación y configuración de Burp Suite
+## Objetivo 4 - Instalación y configuración de Burp Suite
 
 <img width="1908" height="988" alt="imagen" src="https://github.com/user-attachments/assets/07be78df-f3c8-481f-9ccb-d14ab902a49c" />
 
-#¿Qué es un Proxy?*
+# ¿Qué es un Proxy?*
 
 Un Proxy es un intermediario entre el cliente y el servidor. Cuando un usuario realiza una solicitud web, la petición primero pasa por el proxy, el cual puede observar, registrar, modificar o reenviar el tráfico antes de que llegue a su destino.
 
