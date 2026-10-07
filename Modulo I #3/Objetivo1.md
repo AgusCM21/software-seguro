@@ -5,4 +5,8 @@
 
 En este caso tenemos: *POST/api/gastos/1/editar* que marca a un gasto de la lista como revisado.
 
+Metodo: POST.
+
 También está *GET/api/gastos* que muestra la lista de gastos.
+
+Metodo: GET.
