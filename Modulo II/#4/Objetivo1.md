@@ -20,9 +20,11 @@ Los identificadores son asignados por las **CNAs (CVE Numbering Authorities)**, 
 ## Fuentes de consulta
 
 **CVE:** Se puede consultar en la base de datos oficial del MITRE (`cve.mitre.org`) o en el *National Vulnerability Database* (NVD) del NIST (`nvd.nist.gov`).
+
 **CWE:** Se consulta directamente en el sitio oficial del proyecto CWE administrado por MITRE (`cwe.mitre.org`).
 
 ## Herramientas automatizadas
 
 **OWASP Dependency-Check / Snyk:** Herramientas de análisis de composición de software (SCA) que escanean las dependencias y librerías de un proyecto para detectar si contienen CVEs conocidos.
+
 **Nessus / OpenVAS:** Escáneres de vulnerabilidades de infraestructura y red que evalúan sistemas operativos y servicios activos contra bases de datos de CVEs.
