@@ -1,5 +1,7 @@
 # Objetivo 4: Análisis del Ataque de Algoritmo "Ninguno"
 
+## Una de las vulnerabilidades más críticas en la implementación de JWT es aceptar el algoritmo Ninguno. Investiga y explica técnicamente por qué un backend vulnerable a esto permite a un atacante falsificar cualquier identidad sin necesidad de conocer la clave secreta del servidor.
+
 ## ¿por qué un backend vulnerable a esto permite a un atacante falsificar cualquier identidad sin necesidad de conocer la clave secreta del servidor?
 Debido a que la clave secreta solo es necesaria para generar o verificar una firma criptográfica, y cuando el backend acepta "alg": "none", anula ese paso de verificación por completo.
 
