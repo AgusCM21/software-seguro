@@ -21,5 +21,5 @@ Para poder resolver este laboratorio realicé los siguientes pasos:
    
 # Votación nueva versión
 1. Interceptar la petición de voto.
-2. Agregar una cabecera que tenga una ip para poder cambiarla.
-3. Hace un intruder usando la ip para cambiarla y realizar varias peticiones.
+2. Agregar una cabecera que tenga una ip para poder cambiarla como "X-Forwarded-For".
+3. Hacer un intruder usando la ip para cambiarla y realizar varias peticiones.
