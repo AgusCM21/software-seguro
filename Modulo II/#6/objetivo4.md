@@ -11,6 +11,6 @@ Al ocurrir esto se rompe el vínculo entre lo que dice el token y lo que el serv
 
 -El cliente controla el algoritmo que el servidor va a usar: Un backend vulnerable lee "alg" desde el header que envía el propio atacante. En lugar de imponer su propio algoritmo esperado (como HS256 o RS256), deja que el atacante elija cómo se va a "verificar" su propio token.
 
--El payload se acepta sin cuestionar: Como el token no es rechazado por falta de firma, el servidor decodifica el payload en Base64URL —que es una codificación reversible, no un cifrado— y toma los datos de identidad (sub, user, email, role, admin) como ciertos.
+-El payload se acepta sin cuestionar: Como el token no es rechazado por falta de firma, el servidor decodifica el payload en Base64URL y toma los datos de identidad (sub, user, email, role, admin) como ciertos.
 
 -La clave secreta queda fuera de la ecuación: La clave secreta del servidor se usa para calcular o comprobar el HMAC de la firma. Si no se calcula ni se verifica ninguna firma porque "alg" es "none", la clave nunca se consulta ni hace falta conocerla para que el token pase la validación.
