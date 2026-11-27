@@ -15,9 +15,6 @@
 * **¿Qué se encontró?**
   
 * **Impacto en el Negocio:**
-  
-* **Prioridad de Atención:**
-  Ej.: Inmediata (24-48 horas) / Corto plazo (7 días).]
 
 ---
 
