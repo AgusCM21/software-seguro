@@ -70,5 +70,5 @@
 
 ## 5. Recomendaciones de Remediación
 
-* ** Solución Principal (Corto / Mediano Plazo):
+* ** Solución Principal (Corto / Mediano Plazo): **
 [Descripción clara de los cambios a nivel de código o arquitectura necesarios para erradicar la vulnerabilidad.]
