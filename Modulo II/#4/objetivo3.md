@@ -62,11 +62,6 @@
   3. Interceptar la solicitud y modificar el parámetro `[nombre_parametro]` cambiando el valor `101` por `102` (perteneciente al **Usuario B**).
   4. Reenviar la petición modificada y observar que el servidor responde con código `200 OK` devolviendo la información privada del **Usuario B**.
 
-* **Evidencia Técnica (Petición y Respuesta):**
-  ```http
-  GET /api/v1/facturas/102 HTTP/1.1
-  Host: ejemplo.com
-  Authorization: Bearer <TOKEN_USUARIO_A>
 
 ## 5. Recomendaciones de Remediación
 
