@@ -72,3 +72,33 @@
 
 * **Solución Principal (Corto / Mediano Plazo):**
 [Descripción clara de los cambios a nivel de código o arquitectura necesarios para erradicar la vulnerabilidad.]
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 1. ¿Por qué está organizada así la plantilla?
+
+Un reporte o ticket de seguridad profesional debe responder a audiencias muy diferentes dentro de una misma organización, ordenando la información de lo estratégico a lo operativo:
+
+1. **Encabezado / Metadatos:** Permite triaje rápido, trazabilidad en sistemas de gestión (Jira, DefectDojo, GitHub Issues) y filtrado por criticidad o activo afectado.
+2. **Resumen Ejecutivo:** Traduce un problema técnico a **riesgo de negocio**. Está diseñado para perfiles gerenciales (CISO, CTO, Product Owners, Directivos) que necesitan decidir presupuestos, prioridades y tiempos de salida a producción sin leer código.
+3. **Métricas CVSS:** Proporciona un **estándar objetivo e internacional** para medir la severidad. Evita discusiones subjetivas sobre si un fallo es "grave" o "leve", justificando cada vector (acceso, privilegios, impacto en tríada CIA).
+4. **Detalles Técnicos:** Conecta el hallazgo con taxonomías reconocidas (**OWASP, CWE**) y explica la **causa raíz**, permitiendo que arquitectos y líderes técnicos entiendan si es un error puntual o un fallo sistémico repetido en otros módulos.
+5. **Prueba de Concepto (PoC) paso a paso:** Demuestra de manera **irrefutable y reproducible** que la vulnerabilidad existe y es explotable. Incluye petición/respuesta HTTP y capturas con datos sensibles debidamente censurados.
+6. **Recomendaciones de Remediación:** Transforma el reporte de una simple lista de críticas en una **guía práctica de solución**, ofreciendo ejemplos de código seguro y criterios claros de *retest*.
+
+---
+
+### 2. ¿Qué valor genera al usuario final que lee un ticket con esta plantilla?
+
+* **Para el Desarrollador (Equipo de Ingeniería):**
+  * **Ahorro de tiempo en diagnóstico:** No tiene que adivinar dónde ni por qué falla la aplicación; cuenta con el *endpoint*, el parámetro exacto, los pasos deterministas para reproducirlo localmente y un ejemplo concreto de cómo corregirlo.
+  * **Validación autónoma:** Gracias al criterio de *retest*, puede comprobar por sí mismo que su parche cierra la brecha antes de devolver el ticket a seguridad.
+* **Para el Líder Técnico / Arquitecto de Software:**
+  * **Visión sistémica:** Al identificar la causa raíz y la clasificación CWE/OWASP, puede auditar si el mismo patrón inseguro se repite en otros servicios o microservicios del proyecto.
+* **Para Directivos y Gestión de Riesgos:**
+  * **Toma de decisiones informada:** El Resumen Ejecutivo y la puntuación CVSS permiten priorizar recursos de ingeniería sobre las vulnerabilidades que realmente comprometen la continuidad operativa, los datos de clientes o el cumplimiento legal.
+* **Para la Relación entre Seguridad y Desarrollo:**
+  * **Elimina fricciones y falsos positivos:** La evidencia objetiva de la PoC evita debates sobre la validez del hallazgo y fomenta una cultura colaborativa orientada a construir software más seguro.
+
