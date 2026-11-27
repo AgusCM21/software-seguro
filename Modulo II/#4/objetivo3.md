@@ -13,15 +13,27 @@
 
 ## 1. Resumen Ejecutivo
 * **¿Qué se encontró?**
-  [Explicación clara, breve y libre de jerga técnica excesiva sobre el problema detectado. Ej.: Se identificó una falla en el control de acceso que permite a cualquier usuario autenticado visualizar documentos confidenciales pertenecientes a otros clientes.]
+  
 * **Impacto en el Negocio:**
-  [Consecuencias directas para la organización: pérdida financiera, exposición de datos personales/sensibles, daño reputacional, incumplimiento normativo (GDPR, PCI-DSS, Ley de Protección de Datos), interrupción operativa, etc.]
+  
 * **Prioridad de Atención:**
-  [Plazo sugerido de resolución según el nivel de riesgo. Ej.: Inmediata (24-48 horas) / Corto plazo (7 días).]
+  Ej.: Inmediata (24-48 horas) / Corto plazo (7 días).]
 
 ---
 
-## 2. Métricas CVSS (v3.1 / v4.0)
+## 2. Detalles Técnicos
+* **Activo / Endpoint Afectado:** `[URL, IP, puerto, ruta de API o archivo]`
+* **Parámetro / Componente Vulnerable:** `[Ej. Parámetro GET 'id', cabecera HTTP, token JWT]`
+* **Clasificación Estándar:**
+  * **OWASP Top 10:** `[Ej. A01:2021 - Broken Access Control]`
+  * **CWE:** `[Ej. CWE-639: Authorization Bypass Through User-Controlled Key]`
+* **Análisis de Causa Raíz:**
+  [Explicación técnica profunda.]
+
+---
+
+
+## 3. Métricas CVSS (v3.1 / v4.0)
 * **Puntuación Base:** `[0.0 - 10.0]` (`[Severidad]`)
 * **Vector CVSS:** `CVSS:3.1/AV:[N|A|L|P]/AC:[L|H]/PR:[N|L|H]/UI:[N|R]/S:[U|C]/C:[N|L|H]/I:[N|L|H]/A:[N|L|H]`
 
@@ -36,16 +48,6 @@
 | **Integridad (I)** | `[Ej. Ninguna (N)]` | `[Ej. Solo lectura de información.]` |
 | **Disponibilidad (A)** | `[Ej. Ninguna (N)]` | `[Ej. No afecta la continuidad del servicio.]` |
 
----
-
-## 3. Detalles Técnicos
-* **Activo / Endpoint Afectado:** `[URL, IP, puerto, ruta de API o archivo]`
-* **Parámetro / Componente Vulnerable:** `[Ej. Parámetro GET 'id', cabecera HTTP, token JWT]`
-* **Clasificación Estándar:**
-  * **OWASP Top 10:** `[Ej. A01:2021 - Broken Access Control]`
-  * **CWE:** `[Ej. CWE-639: Authorization Bypass Through User-Controlled Key]`
-* **Análisis de Causa Raíz:**
-  [Explicación técnica profunda de por qué ocurre la vulnerabilidad a nivel de código, arquitectura o configuración del servidor. Ej.: El backend consulta la base de datos utilizando directamente el identificador enviado en la URL sin verificar si el `user_id` autenticado en la sesión es propietario del recurso solicitado.]
 
 ---
 
@@ -65,3 +67,8 @@
   GET /api/v1/facturas/102 HTTP/1.1
   Host: ejemplo.com
   Authorization: Bearer <TOKEN_USUARIO_A>
+
+## 5. Recomendaciones de Remediación
+
+* ** Solución Principal (Corto / Mediano Plazo):
+[Descripción clara de los cambios a nivel de código o arquitectura necesarios para erradicar la vulnerabilidad.]
