@@ -1,0 +1,3 @@
+# Objetivo 4: El Punto Ciego de los Escáneres Automatizados
+
+La lógica de negocio es el mayor punto ciego de los escáneres automatizados porque estas herramientas detectan patrones técnicos genéricos y respuestas anómalas, pero no comprenden el contexto, las reglas particulares ni el propósito funcional de cada aplicación. Un escáner no sabe si alterar un valor, repetir una acción o invertir el orden de un flujo rompe una regla de negocio válida. Por eso, la auditoría manual es indispensable: permite mapear los flujos reales, cuestionar las suposiciones del backend, encadenar fallas y evaluar el impacto real de vulnerabilidades que la automatización pasa por alto.
