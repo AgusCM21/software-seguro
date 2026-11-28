@@ -18,4 +18,5 @@ access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIi
 }
 
 -Algoritmo de firma: HS256 (HMAC con SHA-256). Es un algoritmo de firma simétrica: el servidor firma y verifica el token usando una misma clave secreta compartida.
+
 -No se envían roles ni permisos en el Payload. Dado que el Payload está codificado en Base64URL y no cifrado, cualquier persona que acceda al token puede leer su contenido sin conocer la clave secreta. En este caso no se exponen contraseñas, correos ni datos personales sensibles directos, pero sí se incluye el identificador de usuario junto con metadatos de control del token
