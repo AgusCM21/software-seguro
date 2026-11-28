@@ -1,0 +1,3 @@
+# Objetivo 5: El Espejismo del Cifrado en el Cliente (Frontend Encryption)
+
+Cifrar peticiones en JavaScript dentro del navegador genera una falsa sensación de seguridad porque el cliente es un entorno controlado por el usuario/atacante. El fallo fundamental de diseño se basa en depositar confianza de seguridad en el frontend en lugar de validar y proteger todo en el backend. Un atacante puede inspeccionar el código JS en el navegador, poner breakpoints para ver los datos en claro antes del cifrado, extraer claves o reutilizar la propia función de cifrado para generar un body cifrado con valores manipulados e inyectarlo con Burp Suite.
